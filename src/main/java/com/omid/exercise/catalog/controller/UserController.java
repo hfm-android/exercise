@@ -1,13 +1,15 @@
 package com.omid.exercise.catalog.controller;
 
-import com.omid.exercise.catalog.controller.api.user.*;
+import com.omid.exercise.catalog.controller.api.user.AuthorizeRequest;
+import com.omid.exercise.catalog.controller.api.user.CreateUserRequest;
+import com.omid.exercise.catalog.controller.api.user.CreateUserResponse;
+import com.omid.exercise.catalog.controller.api.user.UserDto;
 import com.omid.exercise.catalog.entity.User;
 import com.omid.exercise.catalog.service.UserServiceImpl;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;

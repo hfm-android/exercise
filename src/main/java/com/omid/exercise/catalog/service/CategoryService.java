@@ -38,7 +38,7 @@ public class CategoryService {
         return categoryRepository.save(category);
     }
 
-    public void update(Category category) throws EntityNotFoundException {
+    public void update(Category category) {
         int id = category.getId();
         if (!categoryRepository.existsById(id)) {
             throw new EntityNotFoundException("Category with id " + id + " not found");

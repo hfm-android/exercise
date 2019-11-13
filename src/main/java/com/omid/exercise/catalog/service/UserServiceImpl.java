@@ -6,7 +6,6 @@ import com.omid.exercise.catalog.entity.User;
 import com.omid.exercise.catalog.exception.DuplicateEntityException;
 import com.omid.exercise.catalog.exception.EntityNotFoundException;
 import com.omid.exercise.catalog.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -37,7 +36,7 @@ public class UserServiceImpl implements UserDetailsService {
     }
 
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+    public UserDetails loadUserByUsername(String username) {
         Optional<User> optionalUser = userRepository.findByUsername(username);
         User user = optionalUser.orElseThrow(() -> new UsernameNotFoundException("username not found"));
         Set<SimpleGrantedAuthority> authorities = user.getAuthorities().stream()

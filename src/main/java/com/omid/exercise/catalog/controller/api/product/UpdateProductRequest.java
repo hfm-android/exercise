@@ -2,7 +2,6 @@ package com.omid.exercise.catalog.controller.api.product;
 
 import com.omid.exercise.catalog.controller.api.category.CategoryDto;
 
-import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Positive;
 import java.util.Set;
 

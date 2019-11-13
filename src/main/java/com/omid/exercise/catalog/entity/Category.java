@@ -1,7 +1,5 @@
 package com.omid.exercise.catalog.entity;
 
-import com.omid.exercise.catalog.entity.Product;
-
 import javax.persistence.*;
 import java.util.Set;
 

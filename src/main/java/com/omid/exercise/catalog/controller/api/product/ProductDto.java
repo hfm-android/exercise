@@ -1,9 +1,5 @@
 package com.omid.exercise.catalog.controller.api.product;
 
-import com.omid.exercise.catalog.controller.api.category.CategoryDto;
-
-import java.util.Set;
-
 public class ProductDto {
     private int id;
     private String name;
