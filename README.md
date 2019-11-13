@@ -20,7 +20,7 @@ Everyone can see public services. for more information about rest endpoitns, see
 default user with type ADMIN For basic auth (Postman is suggested)
 ```
 user:admin
-password:pass
+password:password
 ```
 
 ## Headers
